@@ -1,0 +1,24 @@
+<!-- registro.fxml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.trabajofinalprogramacion1.MainScreenController">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Registrar Ingreso de Carro" style="-fx-font-size: 18px;"/>
+            <TextField fx:id="txtPlaca" promptText="Placa"/>
+            <TextField fx:id="txtModelo" promptText="Modelo"/>
+            <TextField fx:id="txtNombre" promptText="Nombre"/>
+            <TextField fx:id="txtApellido" promptText="Apellido"/>
+            <TextField fx:id="txtDocumento" promptText="Documento"/>
+            <Button text="Registrar Ingreso" onAction="#handleRegistrarIngreso"/>
+            <Label fx:id="lblError" textFill="RED" />
+        </VBox>
+    </center>
+
+</BorderPane>
+
