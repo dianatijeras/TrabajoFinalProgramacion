@@ -162,22 +162,6 @@ public class Parqueadero {
 
 
     /**
-     * Registra la salida de un vehiculo
-     * @param vehiculo
-     */
-    public void registrarSalida (Vehiculo vehiculo){
-        for (Ingreso ingreso : listIngresos){
-            if (ingreso.getVehiculo().equals(vehiculo)){ //Comprueba si el vehiculo esa en la lista de ingresos
-                ingreso.setFechaSalida(LocalDateTime.now()); //Establece la fecha de salida como la fecha y hora actual
-                listIngresos.remove(ingreso);
-                System.out.println("Salida registrada");
-            }
-        }
-        System.out.println("Error, vehiculo no encontrado en ingresos");
-    }
-
-
-    /**
      * Identifica al propietario del vehiculo en un puesto dado
      * @param i
      * @param j
